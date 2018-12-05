@@ -8,7 +8,6 @@
 #' @importFrom utils read.delim
 #' @importFrom stringr str_split
 #' @export
-#'
 
 read_6800 <- function(filename, skiplines = 53){
 

@@ -25,6 +25,6 @@ read_bat_6800 <- function(file_dir, skiplines = 53){
   read_6800 <- match.fun("read_6800")
   data_list <- lapply(file_names, read_6800, skiplines = skiplines)
   df <- do.call("rbind", data_list)
-  colnames(df) <- colnames(data_name)
+  colnames(df) <- c(colnames(data_name), "files")
   return(df)
 }
