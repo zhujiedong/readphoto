@@ -26,5 +26,7 @@ read_bat_6800 <- function(file_dir, skiplines = 53){
   data_list <- lapply(file_names, read_6800, skiplines = skiplines)
   df <- do.call("rbind", data_list)
   colnames(df) <- c(colnames(data_name), "files")
+  df_name <- data.frame(files = df$files)
+  df <- cbind(df_name, df[, -(ncol(df))])
   return(df)
 }

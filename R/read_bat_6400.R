@@ -29,5 +29,7 @@ read_bat_6400 <- function(file_dir, header_line = 17, data_start = 27){
   df <- do.call("rbind", data_list)
   colnames(df) <- c(colnames(data_name), "files")
   df <- df[which(df$FTime>0), ]
+  df_name <- data.frame(files = df$files)
+  df <- cbind(df_name, df[, -(ncol(df))])
   return(df)
 }
