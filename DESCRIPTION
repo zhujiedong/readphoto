@@ -7,12 +7,12 @@ Authors@R: c(
     person("Jiedong", "Zhu", , "zhujiedong@yeah.net", c("aut", "cre"))
     )
 Encoding: UTF-8
-Depends: R (>= 3.5.1)
+Depends: R (>= 3.5.0)
 Imports: stringr
 LazyData: yes
 License: GPL-3
 Packaged: 2018-07-17
 Author: Jiedong Zhu [aut, cre]
 Maintainer: Jiedong Zhu <zhujiedong@yeah.net>
-RoxygenNote: 6.1.0
+RoxygenNote: 6.1.1
 Suggests: testthat

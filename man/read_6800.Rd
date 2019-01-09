@@ -4,12 +4,12 @@
 \alias{read_6800}
 \title{Reads files from the LI-6800}
 \usage{
-read_6800(filename, skiplines = 53)
+read_6800(filename, data_start = 56)
 }
 \arguments{
 \item{filename}{path and name of your data.}
 
-\item{skiplines}{the start of your data(headline)}
+\item{data_start}{the start of your data(without headline)}
 }
 \value{
 read_6800 imports a LI-6800 raw data file as a data frame

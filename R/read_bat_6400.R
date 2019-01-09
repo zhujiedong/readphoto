@@ -33,3 +33,6 @@ read_bat_6400 <- function(file_dir, header_line = 17, data_start = 27){
   df <- cbind(df_name, df[, -(ncol(df))])
   return(df)
 }
+
+
+
