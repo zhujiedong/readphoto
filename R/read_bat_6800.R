@@ -8,7 +8,7 @@
 #' @examples
 #' \dontrun{
 #' library(readphoto)
-#' read_bat_6800s('./6800')
+#' read_bat_6800('./6800')
 #' }
 #'
 #' @export
@@ -17,7 +17,7 @@
 read_bat_6800 <- function(file_dir, data_start = 56){
 # use the first file's header as the colnames -----------------------------
   
-  file_names <-  list.files(file_dir, full.names = TRUE)
+  file_names <-  list.files(path = file_dir, full.names = TRUE)
   data_name <- read.delim(file_names[[1]], sep = "\t", skip = data_start-3)
 
 # apply lyapply to cycle all the files ------------------------------------

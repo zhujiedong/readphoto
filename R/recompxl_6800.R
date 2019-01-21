@@ -1,8 +1,8 @@
-#' recompute the raw data in one file measured by LI-6800
-#' @description help to read all raw data files with a command.
+#' recompute the excel data in one file measured by LI-6800
+#' @description help to read all excel data files with a command.
 #'
 #' @param file_dir is the file directory only contains all the measured
-#' raw data.
+#' excel data.
 #' @param data_start the start of your data(without headline)
 #' @param S area of the leaf measured
 #' @param K stomatal ratio
@@ -15,12 +15,12 @@
 #'
 #' @export
 #' 
-recomp_6800 <- function(file_dir,data_start = 56, S = 6, K = 0.5){
+recompxl_6800 <- function(file_dir,data_start = 41, S = 6, K = 0.5){
   
-  read_bat_6800 <- match.fun(read_bat_6800) 
+  readxl_bat_6800 <- match.fun(readxl_bat_6800) 
   
-  df <- read_bat_6800(file_dir,data_start = data_start)
-  # transpiration -----------------------------------------------------------
+  df <- readxl_bat_6800(file_dir,data_start = data_start)
+   # transpiration -----------------------------------------------------------
   
   df$E = df$CorrFact * df$Flow * (df$H2O_s - df$H2O_r) / (100 * S *(1000 - df$CorrFact * df$H2O_s))
   

@@ -18,7 +18,7 @@ help to read all raw data files with a command.
 \examples{
 \dontrun{
 library(readphoto)
-read_bat_6800s('./6800')
+read_bat_6800('./6800')
 }
 
 }

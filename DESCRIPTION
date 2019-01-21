@@ -8,11 +8,14 @@ Authors@R: c(
     )
 Encoding: UTF-8
 Depends: R (>= 3.5.0)
-Imports: stringr
+Imports: 
+   stringr,
+   readxl
 LazyData: yes
 License: GPL-3
 Packaged: 2018-07-17
 Author: Jiedong Zhu [aut, cre]
 Maintainer: Jiedong Zhu <zhujiedong@yeah.net>
 RoxygenNote: 6.1.1
-Suggests: testthat
+ 
+  
