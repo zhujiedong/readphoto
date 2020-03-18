@@ -3,7 +3,6 @@
 #'
 #' @param file_dir is the file directory only contains all the measured
 #' raw data.
-#' @param data_start the start of your data(without headline)
 #' @param S area of the leaf measured
 #' @param K stomatal ratio
 #' 
@@ -15,11 +14,11 @@
 #'
 #' @export
 #' 
-recomp_6800 <- function(file_dir,data_start = 56, S = 6, K = 0.5){
+recomp_6800 <- function(file_dir, S = 6, K = 0.5){
   
-  read_bat_6800 <- match.fun(read_bat_6800) 
+  read_regex68 <- match.fun("read_regex68") 
   
-  df <- read_bat_6800(file_dir,data_start = data_start)
+  df <- read_regex68(file_dir)
   # transpiration -----------------------------------------------------------
   
   df$E = df$CorrFact * df$Flow * (df$H2O_s - df$H2O_r) / (100 * S *(1000 - df$CorrFact * df$H2O_s))

@@ -10,12 +10,11 @@ Encoding: UTF-8
 Depends: R (>= 3.5.0)
 Imports: 
    stringr,
-   readxl
+   readxl,
+   stringi
 LazyData: yes
-License: GPL-3
+License: MIT + file LICENSE
 Packaged: 2018-07-17
 Author: Jiedong Zhu [aut, cre]
 Maintainer: Jiedong Zhu <zhujiedong@yeah.net>
-RoxygenNote: 6.1.1
- 
-  
+RoxygenNote: 7.0.2

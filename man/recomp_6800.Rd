@@ -4,13 +4,11 @@
 \alias{recomp_6800}
 \title{recompute the raw data in one file measured by LI-6800}
 \usage{
-recomp_6800(file_dir, data_start = 56, S = 6, K = 0.5)
+recomp_6800(file_dir, S = 6, K = 0.5)
 }
 \arguments{
 \item{file_dir}{is the file directory only contains all the measured
 raw data.}
-
-\item{data_start}{the start of your data(without headline)}
 
 \item{S}{area of the leaf measured}
 

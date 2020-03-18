@@ -31,3 +31,7 @@ read_bat_6800 <- function(file_dir, data_start = 56){
   
   return(df)
 }
+
+
+
+

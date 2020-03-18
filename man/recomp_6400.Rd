@@ -4,8 +4,7 @@
 \alias{recomp_6400}
 \title{recompute the raw data in one file measured by LI-6400}
 \usage{
-recomp_6400(file_dir, header_line = 17, data_start = 27, S = 6,
-  K = 0.5)
+recomp_6400(file_dir, header_line = 17, data_start = 27, S = 6, K = 0.5)
 }
 \arguments{
 \item{file_dir}{is the file directory only contains all the measured
