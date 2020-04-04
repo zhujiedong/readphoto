@@ -7,14 +7,16 @@ Authors@R: c(
     person("Jiedong", "Zhu", , "zhujiedong@yeah.net", c("aut", "cre"))
     )
 Encoding: UTF-8
-Depends: R (>= 3.5.0)
+Depends: R (>= 3.6.0)
 Imports: 
    stringr,
    readxl,
-   stringi
+   stringi,
+   XLConnect,
+   readr
 LazyData: yes
 License: MIT + file LICENSE
 Packaged: 2018-07-17
 Author: Jiedong Zhu [aut, cre]
 Maintainer: Jiedong Zhu <zhujiedong@yeah.net>
-RoxygenNote: 7.0.2
+RoxygenNote: 7.1.0
