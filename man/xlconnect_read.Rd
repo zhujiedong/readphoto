@@ -4,15 +4,16 @@
 \alias{xlconnect_read}
 \title{Reads files from the LI-6800}
 \usage{
-xlconnect_read(path, start_row = 17, S)
+xlconnect_read(path, start_row = 17, S = 6)
 }
 \arguments{
 \item{path}{path of your data.}
 
 \item{start_row}{start of measured data}
 
-\item{S}{recompute by providing diffferen leaf areas, either a single value, or
-a vector of the same length with the measured data}
+\item{S}{recompute by providing diffferen leaf areas, if the area does not need to change
+, enter one single value of the  actual area, else, enter a vector of the same length 
+with the measured data}
 }
 \value{
 read_6800 imports a LI-6800 raw data file as a data frame

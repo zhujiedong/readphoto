@@ -4,12 +4,14 @@
 #'
 #' @param path path of your data.
 #' @param start_row start of measured data
-#' @param S recompute by providing diffferen leaf areas, either a single value, or
-#' a vector of the same length with the measured data
+#' @param S recompute by providing diffferen leaf areas, if the area does not need to change
+#' , enter one single value of the  actual area, else, enter a vector of the same length 
+#' with the measured data
+#' 
 #' @return read_6800 imports a LI-6800 raw data file as a data frame
 #' @export
 
-xlconnect_read <- function(path, start_row = 17, S) {
+xlconnect_read <- function(path, start_row = 17, S = 6) {
   
   wb <- XLConnect::loadWorkbook(path)
   
