@@ -48,7 +48,7 @@ xlconnect_read <- function(path, start_row = 17, S = 6) {
                       sheet = 1,
                       startRow = 17,
                       header = FALSE)
-  names(df) <- new_name
+  names(df) <- header_name
   
   df
 }
