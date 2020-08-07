@@ -11,7 +11,7 @@
 #' @return read_6800 imports a LI-6800 raw data file as a data frame
 #' @export
 
-xls_read <- function(path, start_row = 17, S = NULL) {
+xlconnect_read <- function(path, start_row = 17, S = NULL) {
   #Loading an Excel workbook. Both .xls and .xlsx file formats can be used.
   wb <- XLConnect::loadWorkbook(path)
   # read group name and header, without header, and paste0 them as names
